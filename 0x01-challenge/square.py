@@ -8,6 +8,7 @@ class Square():
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """intialize the Square"""
         if not args:
             for key, value in kwargs.items():
                 if type(value) == int:
