@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""define Square instances"""
+"""define Square class"""
 
 class Square():
+    """define Square instances"""
     
     width = 0
     height = 0
