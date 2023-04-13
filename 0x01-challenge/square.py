@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """define Square class"""
 
+
 class Square():
     """define Square instances"""
-    
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
@@ -17,15 +16,15 @@ class Square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
-        """ permiter of a square""" 
+        """ permiter of a square"""
         return (self.width * 4)
 
     def __str__(self):
         """ string representation of the instances"""
         return "{}/{}".format(self.width, self.height)
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     s = Square(width=12, height=12)
     print(s)
     print(s.area_of_my_square())
